@@ -12,6 +12,12 @@ if (isset($_POST['login'])) {
     // email: sajidulislam2225@gmail.com
     // password: sajid
 
+    //email: admin@gmail.com
+    //password: admin
+
+    //email: staff@gmail.com
+    //password: staff
+
     $result = $conn->query("SELECT * FROM users WHERE email='$email'");
 
     if ($result && $result->num_rows == 1) {
