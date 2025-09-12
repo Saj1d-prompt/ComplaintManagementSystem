@@ -18,7 +18,7 @@ if (isset($_POST['signup'])) {
         $popupClass = "error";
     } else {
         if ($conn->query("INSERT INTO users (name, email, password) VALUES ('$name','$email','$password')")) {
-            $msg = "Signup successful! <a href='login.php'>Login here</a>";
+            $msg = "Signup successful! <a href='./index.php'>Login here</a>";
             $popupClass = "success";
         } else {
             $msg = "Something went wrong. Try again!";
@@ -51,7 +51,7 @@ if (isset($_POST['signup'])) {
         </form>
 
         <p class="links">
-            Already have an account? <a href="./index.html">Login here</a>
+            Already have an account? <a href="./index.php">Login here</a>
         </p>
     </div>
 </body>
