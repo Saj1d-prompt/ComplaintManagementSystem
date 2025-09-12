@@ -79,3 +79,18 @@ button:hover {
     color: #0056b3;
     text-decoration: underline;
 }
+
+.popup {
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 5px;
+    color: white;
+}                
+.success { 
+    background: #28a745;
+} 
+.error {
+    background: #ff4d4d; 
+} 
