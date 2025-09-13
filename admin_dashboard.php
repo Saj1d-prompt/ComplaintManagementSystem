@@ -45,7 +45,7 @@ $complaints = $conn->query("
                 <ul>
                     <li><a href="admin_dashboard.php" class="active">Dashboard</a></li>
                     <li><a href="manage_complaints.php">Manage Complaints</a></li>
-                    <li><a href="assign_tasks.php">Assign Tasks</a></li>
+                    <li><a href="assign_task.php">Assign Tasks</a></li>
                     <li><a href="manage_users.php">Manage Users</a></li>
                     <li><a href="reports.php">Reports</a></li>
                     <li><a href="index.php">Logout</a></li>
