@@ -24,7 +24,7 @@ $staff = $conn->query("SELECT id, name FROM users WHERE role='staff'");
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assign Tasks | CMS</title>
+    <title>Assign Tasks | Complaint Management System</title>
     <link rel="stylesheet" href="assign_task.css">
 </head>
 <body>
@@ -35,7 +35,7 @@ $staff = $conn->query("SELECT id, name FROM users WHERE role='staff'");
                 <ul>
                     <li><a href="admin_dashboard.php" class="active">Dashboard</a></li>
                     <li><a href="manage_complaints.php">Manage Complaints</a></li>
-                    <li><a href="assign_tasks.php">Assign Tasks</a></li>
+                    <li><a href="assign_task.php">Assign Tasks</a></li>
                     <li><a href="manage_users.php">Manage Users</a></li>
                     <li><a href="reports.php">Reports</a></li>
                     <li><a href="index.php">Logout</a></li>
