@@ -1,0 +1,63 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #fdfdff);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #007bff, #0056d6);
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+header .headText {
+    font-weight: bold;
+    font-size: 22px;
+}
+header nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+header nav a:hover {
+    opacity: 0.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background: #007bff;
+    color: white;
+}
+
+.status.pending {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.status.in-progress {
+    color: #2196f3;
+    font-weight: bold;
+}
+
+.status.resolved {
+    color: #4caf50;
+    font-weight: bold;
+}

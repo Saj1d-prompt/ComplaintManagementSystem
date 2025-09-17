@@ -46,7 +46,7 @@ $complaints = $conn->query("SELECT c.id, c.title, c.description, c.status, c.cre
     <div class="headText">Complaint Management System - Student Dashboard</div>
     <nav>
         <a href="complaintApplication.php">Submit Complaint</a>
-        <a href="#">Complaint History</a>
+        <a href="complaintHistory.php">Complaint History</a>
         <a href="#">Profile</a>
         <a href="index.php">Logout</a>
     </nav>
