@@ -70,7 +70,7 @@ if (isset($_POST['login'])) {
 
         <p class="links">
             <a href="./signup.php">Create an Account</a> | 
-            <a href="#">Forgot Password?</a>
+            <a href="forgetPassword.php">Forgot Password?</a>
         </p>
     </div>
 </body>
