@@ -2,7 +2,6 @@
 session_start();
 include("db.php");
 
-// Redirect if not student
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'student') {
     header("Location: index.php");
     exit();
@@ -10,7 +9,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'student') {
 
 $message = "";
 
-// Handle complaint submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['title'];
     $description = $_POST['description'];
@@ -30,7 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Fetch categories
 $categories = $conn->query("SELECT id, name FROM categories");
 ?>
 <!DOCTYPE html>

@@ -2,7 +2,6 @@
 session_start();
 include 'db.php';
 
-// Check if logged in as student
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'student') {
     header("Location: login.php");
     exit();
@@ -10,11 +9,10 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'student') {
 
 $student_id = $_SESSION['user_id']; 
 
-// Fetch all complaints for this student
 $sql = "SELECT c.id, cat.name as category, c.title, c.description, c.status, c.created_at 
         FROM complaints c
         JOIN categories cat ON c.category_id = cat.id
-        WHERE c.user_id = ?   -- ✅ use user_id instead of student_id
+        WHERE c.user_id = ?  
         ORDER BY c.created_at DESC";
 
 $stmt = $conn->prepare($sql);

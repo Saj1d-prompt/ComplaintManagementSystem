@@ -2,12 +2,11 @@
 session_start();
 include("db.php");
 
-// if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
-//     header("Location: index.php");
-//     exit();
-// }
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+    header("Location: index.php");
+    exit();
+}
 
-// Fetch complaints with student + staff names in one query
 $complaints = $conn->query("
     SELECT c.id, c.title, c.status, u.name AS student, s.name AS staff
     FROM complaints c
@@ -17,7 +16,6 @@ $complaints = $conn->query("
     ORDER BY c.created_at DESC
 ");
 
-// Fetch staff list
 $staff = $conn->query("SELECT id, name FROM users WHERE role='staff'");
 ?>
 <!DOCTYPE html>
